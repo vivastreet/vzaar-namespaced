@@ -24,5 +24,6 @@
 
   "require-dev": {
     "phpunit/phpunit": "~4.3.5"
-  }
+  },
+  "minimum-stability": "dev"
 }
