@@ -1,0 +1,28 @@
+{ "name": "diquinnyonk/vzaar-namespaced",
+  "description": "The PHP client for Vzaar API. Namespaced by diquinnyonk   ",
+  "type": "library",
+  "version": "1.2.0",
+  "keywords": [ "vzaar", "video", "api", "diquinnyonk" ],
+
+  "homepage": "https://github.com/diquinnyonk/vzaar-namespaced",
+  "license": "MIT",
+  "authors": [
+    { "name": "Evi Skitsanos",
+      "email": "evi@vzaar.com",
+      "role": "lead" },
+
+    { "name": "Jozef Chraplewski",
+      "email": "jozef@vzaar.com" },
+
+    { "name": "diquinnyonk",
+      "email": "diquinnyonk@hotmail.com " }
+  ],
+
+  "support": {
+    "issues": "https://vzaar.com/help"
+  },
+
+  "require-dev": {
+    "phpunit/phpunit": "~4.3.5"
+  }
+}
