@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c235dae-71f3-41dd-9bc5-5db14d007885" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OAuthUtil.php" afterPath="$PROJECT_DIR$/src/OAuthUtil.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/XMLToArray.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vzaar.php" afterPath="$PROJECT_DIR$/src/Vzaar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vzaar-namespaced.iws" />
@@ -58,12 +59,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OAuthUtil.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OAuthUtil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OAuthUtil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47155687">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vzaar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Vzaar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5613772">
+              <caret line="609" column="0" selection-start-line="609" selection-start-column="0" selection-end-line="609" selection-end-column="0" />
+              <folding>
+                <element signature="e#446#22236#0#PHP" expanded="false" />
+                <marker date="1448383426000" expanded="true" signature="7280:7569" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="7311:7540" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="8245:8394" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="8273:8365" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="11206:12096" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="11240:12067" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="11492:12032" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="18124:18440" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="18138:18440" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="19833:20254" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="19847:20254" placeholder="..." />
+                <marker date="1448383426000" expanded="true" signature="20120:20254" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLToArray.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/XMLToArray.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+              <folding>
+                <element signature="e#24#4132#1#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,6 +116,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/OAuthUtil.php" />
+        <option value="$PROJECT_DIR$/src/Vzaar.php" />
+        <option value="$PROJECT_DIR$/src/XMLToArray.php" />
       </list>
     </option>
   </component>
@@ -163,6 +202,28 @@
     <property name="last_opened_file_path" value="/Applications/MAMP/bin/php/php5.6.2/bin" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -262,9 +323,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OAuthUtil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47155687">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XMLToArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+          <folding>
+            <element signature="e#24#4132#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vzaar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5613772">
+          <caret line="609" column="0" selection-start-line="609" selection-start-column="0" selection-end-line="609" selection-end-column="0" />
+          <folding>
+            <element signature="e#446#22236#0#PHP" expanded="false" />
+            <marker date="1448383426000" expanded="true" signature="7280:7569" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="7311:7540" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="8245:8394" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="8273:8365" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="11206:12096" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="11240:12067" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="11492:12032" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="18124:18440" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="18138:18440" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="19833:20254" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="19847:20254" placeholder="..." />
+            <marker date="1448383426000" expanded="true" signature="20120:20254" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
