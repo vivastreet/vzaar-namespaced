@@ -1,3 +1,12 @@
+Everything is as normal with the Vzaar-api-php but have added namespacing. This also means splitting out some of the files, vzaars default layout has a few classes in one file.
+
+So these files are now in their own file and have namespace.
+
+If you are using laravel, you can go with the method of bind the
+
+
+
+
 vzaar API PHP client
 ---
 vzaar API client for PHP developers.
