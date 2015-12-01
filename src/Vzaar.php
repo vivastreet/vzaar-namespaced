@@ -13,6 +13,8 @@ namespace Vzaar;
 //require_once 'VideoList.php';
 //require_once 'UploadSignature.php';
 
+use App\Config;
+
 date_default_timezone_set('UTC');
 // Check for CURL
 if (!extension_loaded('curl')) {
@@ -158,6 +160,15 @@ class Vzaar
         $req->verbose = Vzaar::$enableHttpVerbose;
 
         if ($auth) array_push($req->headers, Vzaar::setAuth($_url, 'GET')->to_header());
+
+        /*
+         * we change this, send as pure and we'll let
+         * laravel deal with response
+         */
+        //dd($req->send());
+        //return $req->send();
+
+        //return json_decode($req->send());
 
         return VideoDetails::fromJson($req->send());
     }
@@ -514,8 +525,22 @@ class Vzaar
         array_push($c->headers, 'Connection: close');
         array_push($c->headers, 'Content-Type: application/xml');
 
-        $apireply = new XMLToArray($c->send($data));
-        return $apireply->_data[0]["vzaar-api"]["video"];
+        $response = $c->send($data);
+
+        //Config::create(['key' => 'xml', 'value' => $response]);
+        //dd($response);
+        $data = simplexml_load_string($response);
+
+        return $data->video;
+
+        //$string = str_replace('<?xml','<?xml ',preg_replace('/\s+/', '', $response));
+        //$data = simplexml_load_string($response);
+        //$apireply = new XMLToArray($string);
+        //return $apireply;
+        //return $data;
+        //dd($response,$apireply);
+        //return $c->send($data);
+        //return $apireply->_data[0]["vzaar-api"]["video"];
     }
 
     /**
@@ -580,14 +605,14 @@ class Vzaar
         $mimetype = false;
 
         if(function_exists('finfo_fopen')) {
-          $finfo = finfo_open(FILEINFO_MIME_TYPE);
-          $mimetype = finfo_file($finfo, $fn);
-          finfo_close($finfo);
+            $finfo = finfo_open(FILEINFO_MIME_TYPE);
+            $mimetype = finfo_file($finfo, $fn);
+            finfo_close($finfo);
         } elseif(function_exists('getimagesize')) {
-          $size = getimagesize($fn);
-          $mimetype = $size['mime'];
+            $size = getimagesize($fn);
+            $mimetype = $size['mime'];
         } elseif(function_exists('mime_content_type')) {
-           $mimetype = mime_content_type($fn);
+            $mimetype = mime_content_type($fn);
         }
         return $mimetype;
     }

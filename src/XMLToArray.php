@@ -10,7 +10,11 @@ class XMLToArray
     var $_ignore = Array(), $_replace = Array(), $_showAttribs;
     var $_level = 0;
 
-    function XMLToArray($data, $ignore = Array(), $replace = Array(), $showattribs = false, $toupper = false)
+    public static function XMLToArray($data, $ignore = Array(), $replace = Array(), $showattribs = false, $toupper = false){
+        return new static($data, $ignore = Array(), $replace = Array(), $showattribs = false, $toupper = false);
+    }
+
+    function __construct($data, $ignore = Array(), $replace = Array(), $showattribs = false, $toupper = false)
     {
         $this->_showAttribs = $showattribs;
         $this->_parser = xml_parser_create();

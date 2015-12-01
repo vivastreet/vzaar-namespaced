@@ -1,16 +1,9 @@
 <?php
 namespace Vzaar;
-/**
- * Active video and oEmbed details along with it's relevant metadata.
- *
- */
-class Rendition {
-    var $type;
-    var $statusId;
-    var $status;
-}
 
-class VideoDetails
+use ArrayAccess;
+
+class VideoDetails implements ArrayAccess
 {
 
 	var $type;
@@ -93,6 +86,51 @@ class VideoDetails
 		$this->videoStatus = $videoStatus;
         $this->renditions = $renditions;
 		$this->totalSize = $totalSize;
+	}
+
+	/**
+	 * Determine if the given attribute exists.
+	 *
+	 * @param  mixed  $offset
+	 * @return bool
+	 */
+	public function offsetExists($offset)
+	{
+		return isset($this->$offset);
+	}
+
+	/**
+	 * Get the value for a given offset.
+	 *
+	 * @param  mixed  $offset
+	 * @return mixed
+	 */
+	public function offsetGet($offset)
+	{
+		return $this->$offset;
+	}
+
+	/**
+	 * Set the value for a given offset.
+	 *
+	 * @param  mixed  $offset
+	 * @param  mixed  $value
+	 * @return void
+	 */
+	public function offsetSet($offset, $value)
+	{
+		$this->$offset = $value;
+	}
+
+	/**
+	 * Unset the value for a given offset.
+	 *
+	 * @param  mixed  $offset
+	 * @return void
+	 */
+	public function offsetUnset($offset)
+	{
+		unset($this->$offset);
 	}
 
 	/**
