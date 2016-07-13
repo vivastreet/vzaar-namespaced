@@ -22,6 +22,10 @@
     "issues": "https://vzaar.com/help"
   },
 
+  "require": {
+      "guzzlehttp/guzzle": "4.*"
+  },
+
   "require-dev": {
     "phpunit/phpunit": "~4.3.5"
   },

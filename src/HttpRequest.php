@@ -2,6 +2,8 @@
 
 namespace Vzaar;
 
+use HttpClientFactory;
+
 /**
  * HttpRequest
  *
